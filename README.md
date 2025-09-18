@@ -22,3 +22,11 @@ line console 0
   logging synchronous
 ```
 
+### Layer 2 switch to a Management VLAN with an IP
+
+If your switch is a pure Layer 2 switch (not capable of routing), it needs a default gateway to allow it to send management traffic (like Telnet or SSH) to a remote network. 
+
+```
+ip default-gateway
+```
+
